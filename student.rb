@@ -1,6 +1,6 @@
 require 'dm-core'
 require 'dm-migrations'
-
+require 'sass'
 # put the configuration requirement of the enviroment program is runnin on.
 
 configure :development do
