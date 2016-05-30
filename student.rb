@@ -28,8 +28,8 @@ class Student
 end
 
 DataMapper.finalize					# Validity/Integrity check
-# DataMapper.auto_migrate!	# Development will wipe existing data
-DataMapper.auto_upgrade!		# Upgrading existing database
+DataMapper.auto_migrate!	# Development will wipe existing data
+# DataMapper.auto_upgrade!		# Upgrading existing database
 
 
 get '/add' do
