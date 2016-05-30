@@ -1,7 +1,6 @@
 	require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'sass'
-require './student'
 
 configure do
   enable :sessions
