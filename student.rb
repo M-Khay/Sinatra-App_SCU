@@ -8,7 +8,7 @@ configure :development do
 end
 
 configure :production do
-  DataMapper.setup :default, ENV['DATABASE_URL']
+  DataMapper.setup :default, "sqlite3://#{Dir.pwd}/model/development.db"]
 end
 
 
