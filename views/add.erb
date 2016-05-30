@@ -1,0 +1,47 @@
+<section class="add_student">
+	<form name="add"  method="POST" accept-charset="utf-8">
+		
+
+		<label for="name">Name</label>
+		<input type="text" name="name" placeholder="Studnent Name"  value = "<%= @student.name  if  @student %>"required>
+
+<br><br>
+		<label for="gender">Gender</label>
+		<% if @student and @student.gender==1 %>
+			<label><input type="radio" name="gender" 
+				id="gender" value=1 checked>Male
+				</label>
+				<label><input type="radio" name="gender" 
+					id="gender" value=0 >Female
+				</label>
+<% else %>
+
+<label><input type="radio" name="gender" 
+				id="gender" value=1 >Male
+				</label>
+				<label><input type="radio" name="gender" 
+					id="gender" value=0 checked="" >Female
+				</label>
+
+				<% end %>
+<br><br>
+
+			
+		<label for="score">Score</label>
+		<input type="number" name="score" placeholder="3.5" value = "<%= @student.score if @student%>" required>
+				
+
+<br><br>
+
+			
+		<label for="rank">Rank</label>
+		<input type="rank" name="rank" placeholder="1" 
+		value= "<%= @student.rank if @student %>" required>
+				
+<br><br>
+
+
+				<input type="submit" >
+
+			</form>
+		</section>

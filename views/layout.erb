@@ -1,0 +1,60 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>School Students</title>
+
+	<style type="text/css">
+	
+	h1 {
+	font-family: Helvetica, Geneva, Arial,
+	SunSans-Regular, sans-serif
+	}
+	a  {
+	margin-left: 50px;
+	margin-top: 20px;
+	color: red;
+	font-family: courier;
+	font-size: 80%;
+	}
+	header{
+   	margin: 1em 0 0.5em 0;
+	font-weight: normal;
+	position: relative;
+	text-shadow: 0 -1px rgba(0,0,0,0.6);
+	font-size: 28px;
+	line-height: 40px;
+	background: #355681;
+	background: rgba(53,86,129, 0.8);
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 0 10px 0 10px;
+	box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
+	font-family: 'Muli', sans-serif;
+	}
+		body {
+	font-family: Georgia, "Times New Roman",
+	Times, serif;
+	color: red;
+ background-image: "../wood_pattern.png";
+	/*background-image:url("wood-pattern.png");*/
+}
+
+	</style>
+	
+	
+	</head>
+
+	<body >
+	<header>
+	<a href="/login">Login</a>
+	<a href="/">Home</a>
+	<a href="/students">Students</a>
+	<a href="/add">Add</a>
+	<a href="/logout">Logout</a>
+	</header>
+
+	<%=yield %>
+	</body>
+
+	</html>

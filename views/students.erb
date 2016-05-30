@@ -1,0 +1,31 @@
+	<div id="students">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Score</th>
+				<th>Rank</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @students.each do |student| %>
+				<tr>
+					<td><%= student.id %></td>
+					<td><%= student.name %></td>
+					<td><%= student.gender == 1 ? 'male' : 'female' %></td>
+					<td><%= student.score %></td>
+					<td><%= student.rank %></td>
+									
+					<td><a class"edit" href= "/students/edit/<%= student.id %>"> edit</a></td>
+					<td><a class="deleteebtn" 
+					 href= "/students/delete/<%= student.id %>">Delete</a></td>
+
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
+
