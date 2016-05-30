@@ -1,8 +1,7 @@
 	require 'sinatra'
-	require 'sass'
-
-require'./student'
-
+require 'sinatra/reloader' if development?
+require 'sass'
+require './student'
 
 configure do
   enable :sessions
