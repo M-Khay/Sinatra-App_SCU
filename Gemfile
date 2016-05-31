@@ -6,4 +6,3 @@ gem "sass"
 gem "data_mapper"
 gem "dm-core"
 gem "dm-migrations"
-gem "dm-sqlite-adapter", :group => :development
